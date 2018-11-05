@@ -10,9 +10,8 @@
 `oc login`
 
 
+### Review and  apply the buildconfig
 Take a look at the yaml file. It references a git repository, demonstrates how to map parameters, and how to reference a stand-alone Jenkinsfile.  
-
-### Apply the buildconfig
 
 `oc apply -f pipe.yaml`
 
