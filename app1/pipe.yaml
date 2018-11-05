@@ -8,7 +8,7 @@ spec:
       uri: "https://github.com/mdanter/bc-pipe-demo"
   strategy:
     jenkinsPipelineStrategy:
-      jenkinsfilePath: Jenkinsfile
+      jenkinsfilePath: app1/Jenkinsfile
       env:
         - name: "FOO"
           value: "BAR"
