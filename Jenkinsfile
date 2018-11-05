@@ -1,7 +1,7 @@
-node('agent') {
+node('') {
           stage 'build'
-          openshiftBuild(buildConfig: 'ruby-sample-build', showBuildLogs: 'true')
+          //openshiftBuild(buildConfig: 'ruby-sample-build', showBuildLogs: 'true')
           
           stage 'deploy'
-          openshiftDeploy(deploymentConfig: 'some-dc')
+          //openshiftDeploy(deploymentConfig: 'some-dc')
 }
