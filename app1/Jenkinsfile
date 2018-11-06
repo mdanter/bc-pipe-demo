@@ -1,13 +1,10 @@
 node('') {
           stage 'build'
-          //openshiftBuild(buildConfig: 'ruby-sample-build', showBuildLogs: 'true')
 	  print "FOO = ${FOO}"
 
 	  def template = """
 		the variable is called FOO, and it's defined in the build config which is referencing this file, the value of FOO is ${FOO}
 """
-	  print template
-          
           stage 'deploy'
-          //openshiftDeploy(deploymentConfig: 'some-dc')
+          openshiftDeploy(deploymentConfig: 'some-dc')
 }

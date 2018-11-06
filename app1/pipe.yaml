@@ -2,6 +2,7 @@ kind: "BuildConfig"
 apiVersion: "v1"
 metadata:
   name: "bc-pipe-demo"
+  namespace: "admin-build"
 spec:
   source:
     git:
